@@ -1,2 +1,66 @@
-# Pneumonia-Detection-on-Chest-X-Rays-with-DenseNet121-CAM
-A deep learning project for classifying chest X-ray images as Normal or Pneumonia using DenseNet121. Includes Class Activation Maps (CAM) for visualizing which areas of the X-ray influenced the model’s predictions.
+# Pneumonia Detection with CheXNet and Grad-CAM 🫁🔥
+
+This project uses **CheXNet (DenseNet121)** to classify chest X-ray images as **Normal** or **Pneumonia**, and applies **Grad-CAM** to highlight the lung regions influencing the model's predictions.
+
+## 📌 Features
+- Fine-tuned DenseNet121 pre-trained on ImageNet
+- Trained on chest X-ray datasets (e.g., Kaggle)
+- Grad-CAM heatmaps for interpretability
+- Visualizations for training performance and evaluation
+
+## 🖼️ Sample Output
+
+| Input X-ray | Grad-CAM |
+|-------------|----------|
+| ![](sample_images/Normal.jpeg) | ![](sample_images/cam.jpg) |
+
+---
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/your-username/pneumonia-detection-chexnet.git
+cd pneumonia-detection-chexnet
+
+# Create and activate a virtual environment (optional)
+python -m venv venv
+source venv/bin/activate  # or use venv\Scripts\activate on Windows
+
+pip install -r requirements.txt
+
+🚀 Usage
+1. Train the Model
+
+python chexnet_training.py
+
+2. Run Inference
+
+python chexnet_inference.py --image_path sample_images/Normal.jpeg
+
+3. Generate Grad-CAM
+
+python grad_cam.py --image_path sample_images/Pneumonia.jpeg
+
+📊 Evaluation Metrics
+
+    Accuracy
+
+    Confusion Matrix
+
+    ROC-AUC
+
+    Classification Report
+
+📚 References
+
+    CheXNet Paper (Rajpurkar et al.)
+
+    Grad-CAM (Selvaraju et al.)
+
+🧑‍💻 Author
+
+Muhamad Kamal
+GitHub Profile
+📄 License
+
+MIT
