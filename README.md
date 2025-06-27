@@ -1,8 +1,8 @@
-# Pneumonia Detection with CheXNet and Grad-CAM 🫁🔥
+# Pneumonia Detection with CheXNet and Grad-CAM 
 
 This project uses **CheXNet (DenseNet121)** to classify chest X-ray images as **Normal** or **Pneumonia**, and applies **Grad-CAM** to highlight the lung regions influencing the model's predictions.
 
-## 📌 Features
+## Features
 - Fine-tuned DenseNet121 pre-trained on ImageNet
 - Trained on chest X-ray datasets (e.g., Kaggle)
 - Grad-CAM heatmaps for interpretability
@@ -10,7 +10,7 @@ This project uses **CheXNet (DenseNet121)** to classify chest X-ray images as **
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/privmh/pneumonia-detection-chexnet.git
@@ -22,7 +22,7 @@ source venv/bin/activate  # or use venv\Scripts\activate on Windows
 
 pip install -r requirements.txt
 
-🚀 Usage
+## Usage
 1. Train the Model
 
 python CAM_ChexNet.py
@@ -35,7 +35,7 @@ python chexnet_inference.py --image_path sample_images/Normal.jpeg
 
 python grad_cam.py --image_path sample_images/Pneumonia.jpeg
 
-📊 Evaluation Metrics
+## Evaluation Metrics
 
     Accuracy
 
@@ -45,16 +45,11 @@ python grad_cam.py --image_path sample_images/Pneumonia.jpeg
 
     Classification Report
 
-📚 References
+## References
 
     CheXNet Paper (Rajpurkar et al.)
 
     Grad-CAM (Selvaraju et al.)
 
-🧑‍💻 Author
-
-Muhamad Kamal
-GitHub Profile
-📄 License
-
+## License
 MIT
