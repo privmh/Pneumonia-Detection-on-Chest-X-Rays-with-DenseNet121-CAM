@@ -8,12 +8,6 @@ This project uses **CheXNet (DenseNet121)** to classify chest X-ray images as **
 - Grad-CAM heatmaps for interpretability
 - Visualizations for training performance and evaluation
 
-## 🖼️ Sample Output
-
-| Input X-ray | Grad-CAM |
-|-------------|----------|
-| ![](sample_images/Normal.jpeg) | ![](sample_images/cam.jpg) |
-
 ---
 
 ## 🛠️ Installation
@@ -31,7 +25,7 @@ pip install -r requirements.txt
 🚀 Usage
 1. Train the Model
 
-python chexnet_training.py
+python CAM_ChexNet.py
 
 2. Run Inference
 
