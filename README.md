@@ -20,8 +20,8 @@ This project uses **CheXNet (DenseNet121)** to classify chest X-ray images as **
 
 ## References
 
-    CheXNet Paper (Rajpurkar et al.)
+    CheXNet Paper: https://arxiv.org/abs/1711.05225
 
-    Grad-CAM (Selvaraju et al.)
+    Grad-CAM: https://arxiv.org/abs/1610.02391
 ## License
     MIT
