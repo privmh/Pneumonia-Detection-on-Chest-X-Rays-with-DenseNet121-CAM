@@ -19,7 +19,7 @@ This project uses **CheXNet (DenseNet121)** to classify chest X-ray images as **
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/your-username/pneumonia-detection-chexnet.git
+git clone https://github.com/privmh/pneumonia-detection-chexnet.git
 cd pneumonia-detection-chexnet
 
 # Create and activate a virtual environment (optional)
